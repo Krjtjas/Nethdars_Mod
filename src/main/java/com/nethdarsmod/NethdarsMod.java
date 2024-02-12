@@ -11,6 +11,6 @@ public class NethdarsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Nethdars Mod Loaded!");
+		LOGGER.info("Nethdars Mod successfully Loaded!");
 	}
 }
