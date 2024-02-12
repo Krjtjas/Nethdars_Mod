@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nethdarsmod",
+	"version": "${version}",
+	"name": "Nethdars Mod",
+	"description": "A Mod made by Nethdar to ad diverent Things to Minecraft!",
+	"authors": [
+		"Nethdar"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nethdarsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nethdarsmod.NethdarsMod"
+		],
+		"client": [
+			"com.nethdarsmod.NethdarsModClient"
+		],
+		"fabric-datagen": [
+			"com.nethdarsmod.NethdarsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"nethdarsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
